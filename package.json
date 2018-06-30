@@ -1,0 +1,20 @@
+{
+  "name": "my-behance-app",
+  "version": "1.0.0",
+  "description": "Create behance application for training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Behance",
+    "Design",
+    "Webdesign",
+    "Webpack",
+    "Application",
+    "Training",
+    "Front-End"
+  ],
+  "author": "Przemysław Drożniak",
+  "license": "ISC"
+}
