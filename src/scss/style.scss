@@ -5,6 +5,94 @@
 @import "animations";
 @import "responsive";
 
-h1 {
-    font-size: 40px;
+$color-1: #011627;
+$color-2: #DE3C4B;
+$color-3: #1C5D99;
+$color-4: #FFBF00;
+$color-5: #FFFFFF;
+
+body {
+    background-color: $color-1;
+}
+
+.heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    &__title {
+        font-size: 64px;
+        color: $color-2;
+    }
+    &__subtitle {
+        font-size: 36px;
+        margin: 15px 0;
+        color: $color-5;
+    }
+}
+
+.get-card-button {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: $color-2;
+    color: white;
+    padding: 15px 30px;
+    border: 0;
+    margin-top: 15px;
+    box-shadow: 0 15px 60px rgba( $color-2, .5);
+    cursor: pointer;
+}
+
+.cards {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    &__item {
+        background-color: $color-1;
+        width: 768px;
+        height: 768px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    &__image {
+        margin: 15px 0;
+        box-shadow: 0 15px 160px rgba( $color-2, .75);
+    }
+    &__title {
+        color: $color-5;
+        font-size: 36px;
+        font-weight: bold;
+        text-transform: uppercase;
+        span {
+            color: $color-2;
+        }
+    }
+    &__mana-cost {
+        display: block;
+        font-size: 24px;
+        color: $color-4;
+        margin: 15px 0;
+    }
+    &__description {
+        font-size: 18px;
+        line-height: 2;
+        color: $color-5;
+        width: 50%;
+        margin: auto;
+    }
+}
+
+.close-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    border: 0; 
+    font-size: 36px;
+    font-weight: bold;
+    color: $color-2;
+    cursor: pointer;
 }
